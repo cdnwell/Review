@@ -59,7 +59,7 @@ public class StringMain {
 		
 		String [] arr2 = str5.split(" ");
 		System.out.println(Arrays.toString(arr2));
-				
+		
 		
 	}
 
