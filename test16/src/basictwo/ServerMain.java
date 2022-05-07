@@ -6,14 +6,13 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.rmi.UnknownHostException;
 
 public class ServerMain {
 
 	public static void main(String[] args) {
-		ServerSocket server = null;
+		ServerSocket server =null;
 		BufferedReader br = null;
-		PrintWriter pw = null;
+		PrintWriter pw =null;
 		
 		try {
 			server = new ServerSocket(1234);
@@ -21,13 +20,11 @@ public class ServerMain {
 			pw = new PrintWriter(client.getOutputStream());
 			br = new BufferedReader(new InputStreamReader(client.getInputStream()));
 			
-			pw.println("클라이언트에게 보내는 메세지");
+			pw.println("클라이언트에게 가는 메세지<<<...");
 			pw.flush();
 			String str = br.readLine();
 			System.out.println(str);
 			
-		}catch(UnknownHostException e) {
-			e.printStackTrace();
 		}catch(IOException e) {
 			e.printStackTrace();
 		}finally {
