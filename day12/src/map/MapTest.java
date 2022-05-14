@@ -7,19 +7,19 @@ import java.util.Set;
 public class MapTest {
 	/*
 	 * Map 
-	 *		Å°(Key) °ªÀ» ÀÌ¿ëÇØ¼­ µ¥ÀÌÅÍ(Value)¸¦ ÀúÀå, »èÁ¦, ÀĞ±â, ¼öÁ¤ 
+	 *		í‚¤(Key) ê°’ì„ ì´ìš©í•´ì„œ ë°ì´í„°(Value)ë¥¼ ì €ì¥, ì‚­ì œ, ì½ê¸°, ìˆ˜ì • 
 	 *
-	 * mapÀº ¸Ş¸ğ¸®¸¦ ¸¹ÀÌ ¸Ô´Â´Ù.
+	 * mapì€ ë©”ëª¨ë¦¬ë¥¼ ë§ì´ ë¨¹ëŠ”ë‹¤.
 	 */
 	public static void main(String[] args) {
 		HashMap<String,Person> map = new HashMap<String, Person>();
-		map.put("È«±æµ¿", new Person("È«±æµ¿",20));
-		map.put("±èÃ¶¼ö", new Person("È«±æµ¿",46));
-		map.put("ÀÌ¿µÈñ", new Person("È«±æµ¿",35));
-		map.put("È«±æµ¿", new Person("È«±æµ¿",60));
+		map.put("í™ê¸¸ë™", new Person("í™ê¸¸ë™",20));
+		map.put("ê¹€ì² ìˆ˜", new Person("í™ê¸¸ë™",46));
+		map.put("ì´ì˜í¬", new Person("í™ê¸¸ë™",35));
+		map.put("í™ê¸¸ë™", new Person("í™ê¸¸ë™",60));
 		
 		System.out.println(map);
-		System.out.println(map.get("±èÃ¶¼ö"));
+		System.out.println(map.get("ê¹€ì² ìˆ˜"));
 		
 		Set<String> set = map.keySet();
 		Iterator<String> it = set.iterator();
@@ -29,14 +29,14 @@ public class MapTest {
 		}
 		
 		System.out.println(map.size());
-		System.out.println(map.containsKey("È«±æµ¿"));
-		System.out.println(map.containsValue(new Person("È«±æµ¿",60)));
+		System.out.println(map.containsKey("í™ê¸¸ë™"));
+		System.out.println(map.containsValue(new Person("í™ê¸¸ë™",60)));
 		System.out.println(map.isEmpty());
 		//map.clear();
 		
-//		map.remove("È«±æµ¿");
-		System.out.println(map.containsKey("È«±æµ¿")); //boolean ¹İÈ¯
-		System.out.println(map.get("È«±æµ¿")); //value¹İÈ¯
+//		map.remove("í™ê¸¸ë™");
+		System.out.println(map.containsKey("í™ê¸¸ë™")); //boolean ë°˜í™˜
+		System.out.println(map.get("í™ê¸¸ë™")); //valueë°˜í™˜
 	}
 
 }

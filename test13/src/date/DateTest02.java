@@ -11,7 +11,7 @@ public class DateTest02 {
 		
 		long diff = end.getTime()-start.getTime();
 		diff= diff/(1000*60*60*24);
-		System.out.println("2022³âµµ Å©¸®½º¸¶½º ±îÁö ³²Àº ³¯Â¥...");
+		System.out.println("2022 í¬ë¦¬ìŠ¤ë§ˆìŠ¤ ê¹Œì§€...");
 		System.out.println(diff);
 		
 	}

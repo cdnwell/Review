@@ -21,7 +21,7 @@ public class PersonReadMain {
 					System.out.println(p);
 				}
 			}catch(EOFException e) {
-				System.out.println("ÆÄÀÏ ÀĞ±â ¿Ï·á...");
+				System.out.println("íŒŒì¼ì„ ëª¨ë‘ ë‹¤ ì½ì—ˆìŠµë‹ˆë‹¤.");
 			} 
 			
 		}catch (ClassNotFoundException e) {

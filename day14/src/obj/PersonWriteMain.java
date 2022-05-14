@@ -20,9 +20,9 @@ public class PersonWriteMain {
 			oos = new ObjectOutputStream(fos);
 			
 			for(int i=0;i<5;i++) {
-				System.out.print("ÀÌ¸§ : ");
+				System.out.print("ì´ë¦„:");
 				String name = sc.nextLine();
-				System.out.print("³ªÀÌ : ");
+				System.out.print("ë‚˜ì´:");
 				int age = sc.nextInt();
 				sc.nextLine();
 				list.add(new Person(name,age));

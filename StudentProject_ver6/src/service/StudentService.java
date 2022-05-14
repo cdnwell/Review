@@ -19,10 +19,10 @@ public class StudentService {
 
 	private StudentService() {
 		list = new ArrayList<StudentVO>();
-		list.add(new StudentVO("20201111", "È«±æµ¿", "ÄÄÇ»ÅÍ°øÇĞ°ú", 4.3));
-		list.add(new StudentVO("20201112", "±èÃ¶¼ö", "°æ¿µÇĞ°ú", 3.0));
-		list.add(new StudentVO("20201113", "ÀÌ¿µÈñ", "°æÁ¦ÇĞ°ú", 4.3));
-		list.add(new StudentVO("20201114", "¹Ú¿µ¼ö", "»ıÈ°Ã¼À°ÇĞ°ú", 4.3));
+		list.add(new StudentVO("20201111", "í™ê¸¸ë™", "ì»´í“¨í„°ê³µí•™ê³¼", 4.3));
+		list.add(new StudentVO("20201112", "ê¹€ì² ìˆ˜", "ê²½ì˜í•™ê³¼", 3.0));
+		list.add(new StudentVO("20201113", "ì´ì˜í¬", "ê²½ì œí•™ê³¼", 4.3));
+		list.add(new StudentVO("20201114", "ë°•ì˜ìˆ˜", "ìƒí™œì²´ìœ¡í•™ê³¼", 4.3));
 	}
 
 	public static StudentService getInstance() {
@@ -36,11 +36,11 @@ public class StudentService {
 	}
 
 	/**
-	 * ÇĞ»ıÁ¤º¸ µî·ÏÇÏ´Â ¸Ş¼­µå
+	 * í•™ìƒì •ë³´ ë“±ë¡í•˜ëŠ” ë©”ì„œë“œ
 	 * 
-	 * @param vo ÇĞ»ıÁ¤º¸ ÇÑ°Ç¿¡ ÇØ´çÇÔ
-	 * @return true¸é ÇĞ»ıÁ¤º¸ µî·Ï ¼º°ø, false¸é ÇĞ»ıÁ¤º¸ µî·Ï ½ÇÆĞ
-	 * @throws StudentException ÇĞ»ı¹øÈ£°¡ Áßº¹µÇ¾úÀ» ¶§ ¹ß»ı
+	 * @param vo í•™ìƒì •ë³´ í•œê±´ì— í•´ë‹¹í•¨
+	 * @return trueë©´ í•™ìƒì •ë³´ ë“±ë¡ ì„±ê³µ, falseë©´ í•™ìƒì •ë³´ ë“±ë¡ ì‹¤íŒ¨
+	 * @throws StudentException í•™ìƒë²ˆí˜¸ê°€ ì¤‘ë³µë˜ì—ˆì„ ë•Œ ë°œìƒ
 	 */
 	
 	public void fileLoad() {
@@ -56,7 +56,7 @@ public class StudentService {
 					list.add(vo);
 				}
 			}catch(EOFException e) {
-				System.out.println("ÆÄÀÏ ÀĞ±â ¿Ï·á");
+				System.out.println("íŒŒì¼ ì½ê¸° ì™„ë£Œ");
 			}catch(ClassNotFoundException e) {
 				e.printStackTrace();
 			}
@@ -103,7 +103,7 @@ public class StudentService {
 	public boolean registerStudent(StudentVO vo) throws StudentException {
 
 		if (list.contains(vo)) {
-			throw new StudentException("ÇĞ¹øÀÌ Áßº¹µÇ¾ú½À´Ï´Ù.");
+			throw new StudentException("í•™ë²ˆì´ ì¤‘ë³µë˜ì—ˆìŠµë‹ˆë‹¤.");
 		}
 		return list.add(vo);
 
@@ -113,7 +113,7 @@ public class StudentService {
 
 		int i = list.indexOf(new StudentVO(studentNo, null, null, 0));
 		if (i == -1) {
-			throw new StudentException("°Ë»öÇÑ ÇĞ»ıÁ¤º¸ °á°ú°¡ ¾ø½À´Ï´Ù.");
+			throw new StudentException("ê²€ìƒ‰í•œ í•™ìƒì •ë³´ ê²°ê³¼ê°€ ì—†ìŠµë‹ˆë‹¤.");
 		}
 
 		return list.get(i);

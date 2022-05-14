@@ -16,7 +16,7 @@ public class PrintAllController implements Controller {
 
 		try {
 			if (list.isEmpty())
-				throw new StudentException("ÇĞ»ı µ¥ÀÌÅÍ°¡ ÇÏ³ªµµ ¾ø½À´Ï´Ù.");
+				throw new StudentException("í•™ìƒ ë°ì´í„°ê°€ í•˜ë‚˜ë„ ì—†ìŠµë‹ˆë‹¤.");
 
 			for (int i = 0; i < list.size(); i++) {
 				list.get(i).printStudentInfo();

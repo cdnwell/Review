@@ -15,7 +15,7 @@ public class ServerMain {
 		BufferedReader br = null;
 		PrintWriter pw = null;
 		try {
-			server = new ServerSocket(); //Æ÷Æ®¹øÈ£ 1234
+			server = new ServerSocket(); 
 			InetSocketAddress isa = new InetSocketAddress(1234);
 			server.bind(isa);
 			
@@ -27,7 +27,7 @@ public class ServerMain {
 			
 			String str = br.readLine();
 			System.out.println(str);
-			pw.println("¼­¹ö°¡ º¸³½ ¸Þ¼¼Áö");
+			pw.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Þ¼ï¿½ï¿½ï¿½");
 			pw.flush();
 			
 		}catch (IOException e) {

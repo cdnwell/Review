@@ -39,8 +39,8 @@ public class EchoMultiServerMain2 {
 				e.printStackTrace();
 			}finally{
 				list.remove(this);
-				System.out.println(client.getInetAddress()+"´ÔÀÌ Á¢¼ÓÀ» Á¾·áÇÏ¼Ì½À´Ï´Ù.");
-				System.out.println("ÇöÀç ÀÎ¿ø : " + list.size());
+				System.out.println(client.getInetAddress()+"ë‹˜ì´ ì ‘ì†ì„ ì¢…ë£Œí•˜ì…¨ìŠµë‹ˆë‹¤.");
+				System.out.println("í˜„ì¬ì ‘ì†ì¸ì›:" + list.size());
 				try {
 					if(br != null) br.close();
 					if(pw != null) pw.close();
@@ -58,14 +58,14 @@ public class EchoMultiServerMain2 {
 		
 		try {
 			server = new ServerSocket(1234);
-			System.out.println("¼­¹ö ¿ÀÇÂ!");
+			System.out.println("ì„œë²„ë¥¼ ìƒì„±í–ˆìŠµë‹ˆë‹¤!");
 			while(true) {
 				Socket client = server.accept();
-				System.out.println(client.getInetAddress()+"´ÔÀÌ Á¢¼ÓÇß½À´Ï´Ù.");
+				System.out.println(client.getInetAddress()+"ë‹˜ì´ ì ‘ì†í•˜ì…¨ìŠµë‹ˆë‹¤.");
 				ServerWorker worker = new ServerWorker(client);
 				worker.start();
 				list.add(worker);
-				System.out.println("ÇöÀç ÀÎ¿ø : " + list.size());
+				System.out.println("í˜„ì¬ì ‘ì†ì¸ì›:" + list.size());
 			}
 		}catch(IOException e) {
 			e.printStackTrace();

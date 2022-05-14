@@ -3,12 +3,12 @@ package init;
 public class RunnableMain {
 
 	public static void main(String[] args) {
-		Thread t1 = new Thread(new RunnableRun(),"½º·¹µå1");
-		Thread t2 = new Thread(new RunnableRun(),"½º·¹µå2");
-		Thread t3 = new Thread(new RunnableRun(),"½º·¹µå3");
-		Thread t4 = new Thread(new RunnableRun(),"½º·¹µå4");
-		Thread t5 = new Thread(new RunnableRun(),"½º·¹µå5");
-		Thread t6 = new Thread(new RunnableRun(),"½º·¹µå6");
+		Thread t1 = new Thread(new RunnableRun(),"ìŠ¤ë ˆë“œ1");
+		Thread t2 = new Thread(new RunnableRun(),"ìŠ¤ë ˆë“œ2");
+		Thread t3 = new Thread(new RunnableRun(),"ìŠ¤ë ˆë“œ3");
+		Thread t4 = new Thread(new RunnableRun(),"ìŠ¤ë ˆë“œ4");
+		Thread t5 = new Thread(new RunnableRun(),"ìŠ¤ë ˆë“œ5");
+		Thread t6 = new Thread(new RunnableRun(),"ìŠ¤ë ˆë“œ6");
 		
 		t1.start();
 		t2.start();

@@ -7,14 +7,14 @@ public class JobMain {
 	public static void main(String[] args) {
 		JobSeeker [] arr = new JobSeeker[10];
 		for(int i=0;i<10;i++) {
-			arr[i]=new JobSeeker("±¸Á÷ÀÚ"+i);
+			arr[i]=new JobSeeker("ì¼ê¾¼ "+i);
 			arr[i].start();
 		}
 		
 		Scanner sc = new Scanner(System.in);
 		JobManager manager = new JobManager();
 		for(int i=0;i<10;i++) {
-			System.out.print("Á÷¾÷ Á¤º¸ ÀÔ·Â>");
+			System.out.print("");
 			String str = sc.nextLine();
 			manager.writeJobManager(str);
 		}

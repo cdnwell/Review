@@ -22,7 +22,7 @@ public class EchoClientMain {
 			br = new BufferedReader(new InputStreamReader(server.getInputStream()));
 			sc = new Scanner(System.in);
 			while(true) {
-				System.out.print("¸Þ¼¼Áö¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä >> ");
+				System.out.print("ë©”ì‹œì§€ë¥¼ ìž…ë ¥í•´ì£¼ì„¸ìš”:");
 				String str = sc.nextLine();
 				pw.println(str);
 				pw.flush();

@@ -1,6 +1,7 @@
 package controller;
 
 import java.util.ArrayList;
+
 import java.util.Scanner;
 
 import exception.StudentException;
@@ -15,7 +16,7 @@ public class TopStudentController implements Controller {
 
 		try {
 			if (list == null) {
-				throw new StudentException("ÇĞ»ı µ¥ÀÌÅÍ°¡ ÇÏ³ªµµ ¾ø½À´Ï´Ù.");
+				throw new StudentException("í•™ìƒ ë°ì´í„°ê°€ í•˜ë‚˜ë„ ì—†ìŠµë‹ˆë‹¤.");
 			}
 
 			for (StudentVO vo : list) {

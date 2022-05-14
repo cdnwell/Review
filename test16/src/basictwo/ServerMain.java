@@ -20,7 +20,7 @@ public class ServerMain {
 			pw = new PrintWriter(client.getOutputStream());
 			br = new BufferedReader(new InputStreamReader(client.getInputStream()));
 			
-			pw.println("Å¬¶óÀÌ¾ğÆ®¿¡°Ô °¡´Â ¸Ş¼¼Áö<<<...");
+			pw.println("ë©”ì‹œì§€ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”>>>");
 			pw.flush();
 			String str = br.readLine();
 			System.out.println(str);

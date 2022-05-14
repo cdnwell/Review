@@ -23,17 +23,17 @@ public class Cinema {
 		}
 		
 		if(seatNo < 1 || seatNo > 5) {
-			System.out.println("¿Ã¹Ù¸¥ ÁÂ¼® ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+			System.out.println("ì˜¬ë°”ë¥¸ ì¢Œì„ ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
 			return false;
 		}
 		
 		if(seat[seatNo-1]==null) {
 			seat[seatNo-1] = name;
-			System.out.println(name + " ¼Õ´Ô " + seatNo + "ÁÂ¼® ¿¹¸Å¿¡ ¼º°øÇÏ¼Ì½À´Ï´Ù.");
+			System.out.println(name + " ì†ë‹˜ " + seatNo + "ì¢Œì„ ì˜ˆë§¤ì— ì„±ê³µí•˜ì…¨ìŠµë‹ˆë‹¤.");
 			return true;
 		}
 		
-		System.out.println(name + " ¼Õ´Ô "+seatNo+"ÁÂ¼® ¿¹¸Å¿¡ ½ÇÆĞÇÏ¼Ì½À´Ï´Ù.");
+		System.out.println(name + " ì†ë‹˜ "+seatNo+"ì¢Œì„ ì˜ˆë§¤ì— ì‹¤íŒ¨í•˜ì…¨ìŠµë‹ˆë‹¤.");
 		return false;
 	}
 	

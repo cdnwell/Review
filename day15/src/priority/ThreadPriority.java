@@ -4,7 +4,7 @@ public class ThreadPriority extends Thread{
 
 	public ThreadPriority(String name) {
 		super(name);
-		System.out.println(name + " - ½º·¹µå »ý¼º");
+		System.out.println(name + " - ìŠ¤ë ˆë“œ ì‹¤í–‰");
 	}
 	
 	@Override
@@ -15,6 +15,6 @@ public class ThreadPriority extends Thread{
 		}catch(InterruptedException e) {
 			e.printStackTrace();
 		}
-		System.out.println(getName()+ " - ½º·¹µå Á¾·á");
+		System.out.println(getName()+ " - ìŠ¤ë ˆë“œ ì¢…ë£Œ");
 	}
 }

@@ -9,15 +9,15 @@ public class FileTest {
 		File file = new File("c:\\test\\test.txt");
 		System.out.println(file);
 		System.out.println(file.getParent());
-		File parentFile = file.getParentFile();	//class File·Î ¹İÈ¯
+		File parentFile = file.getParentFile();	//class Fileë¡œ ë°˜í™˜
 		System.out.println(parentFile);
 		
 		System.out.println(parentFile.exists());
-		//ÆÄÀÏ »ı¼º Àü¿¡ ÆÄÀÏÀÌ À§Ä¡ÇÑ Æú´õ °æ·Î°¡ ÀÖ´ÂÁö Ã¼Å©
+		//íŒŒì¼ ìƒì„± ì „ì— íŒŒì¼ì´ ìœ„ì¹˜í•œ í´ë” ê²½ë¡œê°€ ìˆëŠ”ì§€ ì²´í¬
 		if(!parentFile.exists()) {
-			//°æ·Î°¡ ¾øÀ» ‹š ÇØ´ç °æ·Î±îÁöÀÇ ¸ğµç Æú´õ¸¦ »ı¼º
+			//ê²½ë¡œê°€ ì—†ì„ Â‹Âš í•´ë‹¹ ê²½ë¡œê¹Œì§€ì˜ ëª¨ë“  í´ë”ë¥¼ ìƒì„±
 			parentFile.mkdirs();
-			System.out.println("ÇØ´ç °æ·Î Æú´õ¸¦ ¸ğµÎ »ı¼º");
+			System.out.println("í•´ë‹¹ ê²½ë¡œ í´ë”ë¥¼ ëª¨ë‘ ìƒì„±");
 		}
 		try {
 			boolean result = file.createNewFile();

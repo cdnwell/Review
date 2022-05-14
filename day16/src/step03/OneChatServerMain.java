@@ -25,7 +25,7 @@ public class OneChatServerMain {
 			sw.start();
 			
 			while(true) {
-				System.out.println("¸Þ½ÃÁö ÀÔ·Â >>>");
+				System.out.println("ë©”ì‹œì§€ ìž…ë ¥>>>");
 				String str = sc.nextLine();
 				pw.println(str);
 				pw.flush();

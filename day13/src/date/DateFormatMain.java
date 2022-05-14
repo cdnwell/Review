@@ -10,49 +10,49 @@ public class DateFormatMain {
 		Calendar cal = Calendar.getInstance();
 		Date d1 = new Date();
 		SimpleDateFormat sdf = new SimpleDateFormat();
-		sdf.applyPattern("yyyy"); // ¿¬µµ 4ÀÚ¸®
+		sdf.applyPattern("yyyy"); // ì—°ë„ 4ìë¦¬
 		System.out.println(sdf.format(cal.getTime()));
-		sdf.applyPattern("yy"); // ¿¬µµ 2ÀÚ¸®
+		sdf.applyPattern("yy"); // ì—°ë„ 2ìë¦¬
 		System.out.println(sdf.format(cal.getTime()));
-		sdf.applyPattern("MMMM"); // ·ÎÄÃÇü½Ä ¿ù
+		sdf.applyPattern("MMMM"); // ë¡œì»¬í˜•ì‹ ì›”
 		System.out.println(sdf.format(cal.getTime()));
-		sdf.applyPattern("MMM"); // ·ÎÄÃÇü½Ä ¿ù
+		sdf.applyPattern("MMM"); // ë¡œì»¬í˜•ì‹ ì›”
 		System.out.println(sdf.format(cal.getTime()));
-		sdf.applyPattern("MM"); // ¿ù 2ÀÚ¸®
+		sdf.applyPattern("MM"); // ì›” 2ìë¦¬
 		System.out.println(sdf.format(cal.getTime()));
-		sdf.applyPattern("M"); // ¿ù 1ÀÚ¸®
+		sdf.applyPattern("M"); // ì›” 1ìë¦¬
 		System.out.println(sdf.format(cal.getTime()));
-		sdf.applyPattern("dd"); // ÀÏ 2ÀÚ¸®
+		sdf.applyPattern("dd"); // ì¼ 2ìë¦¬
 		System.out.println(sdf.format(cal.getTime()));
-		sdf.applyPattern("d"); // ÀÏ 1ÀÚ¸®
+		sdf.applyPattern("d"); // ì¼ 1ìë¦¬
 		System.out.println(sdf.format(cal.getTime()));
-		sdf.applyPattern("E"); // ¿äÀÏ 1ÀÚ¸®
+		sdf.applyPattern("E"); // ìš”ì¼ 1ìë¦¬
 		System.out.println(sdf.format(cal.getTime()));
-		sdf.applyPattern("EEEE"); // ¿äÀÏ Ç®³×ÀÓ
+		sdf.applyPattern("EEEE"); // ìš”ì¼ í’€ë„¤ì„
 		System.out.println(sdf.format(cal.getTime()));
-		sdf.applyPattern("HH"); // ½Ã°£ 2ÀÚ¸®
+		sdf.applyPattern("HH"); // ì‹œê°„ 2ìë¦¬
 		System.out.println(sdf.format(cal.getTime()));
-		sdf.applyPattern("H");	// ½Ã°£ 1ÀÚ¸®
+		sdf.applyPattern("H");	// ì‹œê°„ 1ìë¦¬
 		System.out.println(sdf.format(cal.getTime()));
-		sdf.applyPattern("KK");	// ½Ã°£ 2ÀÚ¸® - 12½Ã°£ ±âÁØ
+		sdf.applyPattern("KK");	// ì‹œê°„ 2ìë¦¬ - 12ì‹œê°„ ê¸°ì¤€
 		System.out.println(sdf.format(cal.getTime()));
-		sdf.applyPattern("K");	// ½Ã°£ 1ÀÚ¸® - 12½Ã°£ ±âÁØ
+		sdf.applyPattern("K");	// ì‹œê°„ 1ìë¦¬ - 12ì‹œê°„ ê¸°ì¤€
 		System.out.println(sdf.format(cal.getTime()));
-		sdf.applyPattern("mm");	// ºĞ 2ÀÚ¸®
+		sdf.applyPattern("mm");	// ë¶„ 2ìë¦¬
 		System.out.println(sdf.format(cal.getTime()));
-		sdf.applyPattern("m");	// ºĞ 1ÀÚ¸®
+		sdf.applyPattern("m");	// ë¶„ 1ìë¦¬
 		System.out.println(sdf.format(cal.getTime()));
-		sdf.applyPattern("ss");	// ÃÊ 2ÀÚ¸®
+		sdf.applyPattern("ss");	// ì´ˆ 2ìë¦¬
 		System.out.println(sdf.format(cal.getTime()));
-		sdf.applyPattern("s");	// ÃÊ 1ÀÚ¸®
+		sdf.applyPattern("s");	// ì´ˆ 1ìë¦¬
 		System.out.println(sdf.format(cal.getTime()));
 		
 		//Quiz01]
 		//2022-04-29 12:22:50
 		sdf.applyPattern("yyyy-MM-dd HH:mm:ss");
 		System.out.println(sdf.format(cal.getTime()));
-		//2022³â 04¿ù 29ÀÏ 12½Ã 22ºĞ 50ÃÊ
-		sdf.applyPattern("yyyy³â MM¿ù ddÀÏ HH½Ã mmºĞ ssÃÊ");
+		//2022ë…„ 04ì›” 29ì¼ 12ì‹œ 22ë¶„ 50ì´ˆ
+		sdf.applyPattern("yyyyë…„ MMì›” ddì¼ HHì‹œ mmë¶„ ssì´ˆ");
 		System.out.println(sdf.format(cal.getTime()));
 	}
 

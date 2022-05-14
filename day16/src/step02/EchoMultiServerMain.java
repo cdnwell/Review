@@ -17,11 +17,11 @@ public class EchoMultiServerMain {
 			server = new ServerSocket(1234);
 			while(true) {
 			Socket client = server.accept();
-			System.out.println(client.getInetAddress()+ "´ÔÀÌ Á¢¼ÓÇÏ¼Ì½À´Ï´Ù.");
+			System.out.println(client.getInetAddress() + "ë‹˜ì´ ì ‘ì†í•˜ì…¨ìŠµë‹ˆë‹¤.");
 			ServerWorker worker = new ServerWorker(client);
 			worker.start();
 			list.add(worker);
-			System.out.println("ÇöÀçÁ¢¼ÓÀÎ¿ø : "+list.size());
+			System.out.println("í˜„ì¬ì ‘ì†ì¸ì›:"+list.size());
 			}
 			
 		}catch(IOException e) {

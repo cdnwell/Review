@@ -21,7 +21,7 @@ public class ClientMain {
 			
 			String str = br.readLine();
 			System.out.println(str);
-			pw.println("¼­¹ö·Î º¸³»´Â ¸Þ¼¼Áö...>>>");
+			pw.println("ë©”ì‹œì§€ë¥¼ ìž…ë ¥í•´ì£¼ì„¸ìš”>>>");
 			pw.flush();
 			
 		}catch(UnknownHostException e) {

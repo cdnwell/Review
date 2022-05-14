@@ -11,26 +11,26 @@ public class RegisterController implements Controller {
 
 	@Override
 	public void execute(Scanner sc) {
-		System.out.println("ÇÐ»ý Á¤º¸ µî·ÏÀ» ½ÃÀÛÇÕ´Ï´Ù.");
+		System.out.println("ï¿½Ð»ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.");
 
-		// ÇÐ»ýÁ¤º¸ ÀÔ·Â
+		// ï¿½Ð»ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½
 
-		try {// ¿¡·¯ ¸Þ½ÃÁö¸¦ ±»ÀÌ ¾µ ÇÊ¿ä°¡ ¾ø´Ù. boolean °ªµµ ¾ø¾ÖÁÜ.
-			System.out.print("ÇÐ¹ø : ");
+		try {// ï¿½ï¿½ï¿½ï¿½ ï¿½Þ½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ê¿ä°¡ ï¿½ï¿½ï¿½ï¿½. boolean ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.
+			System.out.print("ï¿½Ð¹ï¿½ : ");
 			String studentNo = sc.nextLine();
-			System.out.print("ÀÌ¸§ : ");
+			System.out.print("ï¿½Ì¸ï¿½ : ");
 			String name = sc.nextLine();
-			System.out.print("ÇÐ°ú : ");
+			System.out.print("ï¿½Ð°ï¿½ : ");
 			String major = sc.nextLine();
-			System.out.print("Æò±Õ : ");
-			double score = sc.nextDouble(); // ½Ç¼ö¸¦ ÀÔ·Â¹Þ¾Æ¾ß µÇ´Âµ¥ ´Ù¸¥ °ªÀ» ¹Þ¾ÒÀ» ¶§ catch
+			System.out.print("ï¿½ï¿½ï¿½ : ");
+			double score = sc.nextDouble(); // ï¿½Ç¼ï¿½ï¿½ï¿½ ï¿½Ô·Â¹Þ¾Æ¾ï¿½ ï¿½Ç´Âµï¿½ ï¿½Ù¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Þ¾ï¿½ï¿½ï¿½ ï¿½ï¿½ catch
 			sc.nextLine();
 			StudentService.getInstance().registerStudent(new StudentVO(studentNo, name, major, score));
-			System.out.println("ÇÐ»ýÁ¤º¸ µî·Ï ¿Ï·á");
+			System.out.println("ï¿½Ð»ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½Ï·ï¿½");
 		} catch (StudentException e) {
 			System.out.println(e.getMessage());
 		} catch (InputMismatchException e) {
-			System.out.println("Á¡¼ö¸¦ Àß¸ø ÀÔ·ÂÁ™½À´Ï´Ù.");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß¸ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 		}
 	}
 

@@ -5,8 +5,8 @@ import java.util.Arrays;
 public class StringTest {
 
 	public static void main(String[] args) {
-		String str="¾È³çÇÏ¼¼¿ä";
-		boolean result="¾È³çÇÏ¼¼¿ä".equals("¾È³çÇÏ¼¼¿ä");
+		String str="Hello World";
+		boolean result="ì•ˆë…•í•˜ì„¸ìš”".equals("ì•ˆë…•í•˜ì„¸ìš”");
 		
 		System.out.println(result);
 		
@@ -18,7 +18,7 @@ public class StringTest {
 		for(int i=0;i<str.length();i++) {
 			System.out.print(str.charAt(i));
 		}
-		System.out.println();	//¿£ÅÍ ÇÑ¹ø
+		System.out.println();	
 		System.out.println();
 		System.out.println(str.charAt(0));
 	}

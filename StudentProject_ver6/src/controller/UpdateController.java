@@ -9,22 +9,22 @@ import vo.StudentVO;
 
 public class UpdateController implements Controller {
 	/*
-	 * updatecontroller´Â ¼­ºñ½º°¡ ÇÊ¿äÇÏÁö ¾Ê°í controller¿¡¼­¸¸ ¼öÇàµÈ´Ù.
+	 * updatecontrollerëŠ” ì„œë¹„ìŠ¤ê°€ í•„ìš”í•˜ì§€ ì•Šê³  controllerì—ì„œë§Œ ìˆ˜í–‰ëœë‹¤.
 	 */
 
 	@Override
 	public void execute(Scanner sc) {
-		System.out.println("ÇĞ»ı Á¤º¸ ¼öÁ¤À» ½ÃÀÛÇÕ´Ï´Ù........");
-		System.out.print("¼öÁ¤ÇÒ ÇĞ»ı¹øÈ£ ÀÔ·Â : ");
+		System.out.println("í•™ìƒ ì •ë³´ ìˆ˜ì •ì„ ì‹œì‘í•©ë‹ˆë‹¤........");
+		System.out.print("ìˆ˜ì •í•  í•™ìƒë²ˆí˜¸ ì…ë ¥ : ");
 		String studentNo = sc.nextLine();
 		StudentVO vo;
 		try {
 			vo = StudentService.getInstance().searchStudent(studentNo);
-			System.out.print("ÀÌ¸§ : ");
+			System.out.print("ì´ë¦„ : ");
 			String name = sc.nextLine();
-			System.out.print("ÇĞ°ú : ");
+			System.out.print("í•™ê³¼ : ");
 			String major = sc.nextLine();
-			System.out.print("Æò±Õ : ");
+			System.out.print("í‰ê·  : ");
 			double score = sc.nextDouble();
 			sc.nextLine();
 			
@@ -35,7 +35,7 @@ public class UpdateController implements Controller {
 		} catch (StudentException e) {
 			System.out.println(e.getMessage());
 		} catch (InputMismatchException e) {
-			System.out.println("ÆòÁ¡Àº ½Ç¼ö·Î ÀÔ·ÂÇÏ¼¼¿ä.");
+			System.out.println("í‰ì ì€ ì‹¤ìˆ˜ë¡œ ì…ë ¥í•˜ì„¸ìš”.");
 		}
 
 	}

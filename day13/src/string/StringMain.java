@@ -9,28 +9,28 @@ public class StringMain {
 		String str1 = "Hello World";
 		byte[] arr = str1.getBytes();
 		System.out.println(Arrays.toString(arr));		
-		//byte Å¸ÀÔÀ¸·Î º¯°æµÇ¸é¼­ °¢ ±ÛÀÚ°¡ ASCIIÄÚµå °ªÀ¸·Î ¹Ù²î¾ú´Ù.
+		//byte íƒ€ì…ìœ¼ë¡œ ë³€ê²½ë˜ë©´ì„œ ê° ê¸€ìê°€ ASCIIì½”ë“œ ê°’ìœ¼ë¡œ ë°”ë€Œì—ˆë‹¤.
 		System.out.println(str1.charAt(0));
 		
 		String str2 = "Hello World Hello Java World";
 		System.out.println(str2.indexOf("World"));
-		//¹®ÀÚ¿­ Ã³À½ºÎÅÍ °Ë»ö
+		//ë¬¸ìì—´ ì²˜ìŒë¶€í„° ê²€ìƒ‰
 		System.out.println(str2.indexOf("World",7));
-		//¹®ÀÚ¿­ 7¹ø ÀÎµ¦½ººÎÅÍ °Ë»ö
+		//ë¬¸ìì—´ 7ë²ˆ ì¸ë±ìŠ¤ë¶€í„° ê²€ìƒ‰
 		System.out.println(str2.lastIndexOf("World"));
-		//¹®ÀÚ¿­ ³¡¿¡¼­ºÎÅÍ °Ë»ö
+		//ë¬¸ìì—´ ëì—ì„œë¶€í„° ê²€ìƒ‰
 		System.out.println(str2.lastIndexOf("World",22));
-		//¹®ÀÚ¿­ 22¹øºÎÅÍ ¾ÕÀ¸·Î °Ë»ö
+		//ë¬¸ìì—´ 22ë²ˆë¶€í„° ì•ìœ¼ë¡œ ê²€ìƒ‰
 		System.out.println(str2.toUpperCase());
-		//¸ğµç ±ÛÀÚ ´ë¹®ÀÚ·Î º¯°æ
+		//ëª¨ë“  ê¸€ì ëŒ€ë¬¸ìë¡œ ë³€ê²½
 		System.out.println(str2.toLowerCase());
-		//¸ğµç ±ÛÀÚ ¼Ò¹®ÀÚ·Î º¯°æ
+		//ëª¨ë“  ê¸€ì ì†Œë¬¸ìë¡œ ë³€ê²½
 		System.out.println(str2.length());
-		//±ÛÀÚ ±æÀÌ
+		//ê¸€ì ê¸¸ì´
 		System.out.println(str2.substring(10));
-		//¹®ÀÚ¿­ 10¹øºÎÅÍ ¸¶Áö¸·±îÁö Àß¶ó¼­ ¸®ÅÏ
+		//ë¬¸ìì—´ 10ë²ˆë¶€í„° ë§ˆì§€ë§‰ê¹Œì§€ ì˜ë¼ì„œ ë¦¬í„´
 		System.out.println(str2.substring(10,15));
-		//¹®ÀÚ¿­ 10¹øºÎÅÍ 15¹ø±îÁö Àß¶ó¼­ ¸®ÅÏ(½ÇÁ¦ Ç¥½ÃµÇ´Â °ªÀº 10¹øºÎÅÍ 14¹ø±îÁö)
+		//ë¬¸ìì—´ 10ë²ˆë¶€í„° 15ë²ˆê¹Œì§€ ì˜ë¼ì„œ ë¦¬í„´(ì‹¤ì œ í‘œì‹œë˜ëŠ” ê°’ì€ 10ë²ˆë¶€í„° 14ë²ˆê¹Œì§€)
 		System.out.println(str2.replace("Hello", "Hell"));
 		
 		String str3="   Hello World     ";

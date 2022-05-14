@@ -4,7 +4,7 @@ import inner.OutterClass.InnerClass;
 
 public class OutterMain {
 	/*
-	 * innerclass·Î °´Ã¼¸¦ ¸¸µé±â À§ÇØ¼­ import¸¦ ÅëÇØ Å¬·¡½º¸¦ °¡Á®¿Ô´Ù.
+	 * innerclassë¡œ ê°ì²´ë¥¼ ë§Œë“¤ê¸° ìœ„í•´ì„œ importë¥¼ í†µí•´ í´ë˜ìŠ¤ë¥¼ ê°€ì ¸ì™”ë‹¤.
 	 */
 	public static void main(String[] args) {
 		OutterClass outter = new OutterClass(100);

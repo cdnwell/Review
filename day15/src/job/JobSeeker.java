@@ -10,11 +10,11 @@ public class JobSeeker extends Thread{
 	public void run() {
 		try {
 			while(true) {
-				System.out.println(getName()+ "가 작업 정보 수신을 대기중입니다.");
+				System.out.println(getName()+ "");
 				String msg = JobInfo.getInstance().getJobInfo();
 				if(msg != null) {
-					System.out.println(msg + "는 " + getName()+ "님이 수신하였습니다.");
-					System.out.println(getName() + " 구직자 지원 종료");
+					System.out.println(msg + "" + getName()+ "");
+					System.out.println(getName() + "");
 				}
 			}
 		}catch(InterruptedException e) {

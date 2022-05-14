@@ -5,50 +5,50 @@ import java.util.Scanner;
 public class StringQuest {
 
 	public static String convertor(char ch) {
-		if(ch >= '°¡' && ch < '±î')
-			return "¤¡";
-		else if(ch >= '±î' && ch < '³ª')
-			return "¤¢";
-		else if(ch >= '³ª' && ch < '´Ù')
-			return "¤¤";
-		else if(ch >= '´Ù' && ch < 'µû')
-			return "¤§";
-		else if(ch >= 'µû' && ch < '¶ó')
-			return "¤¨";
-		else if(ch >= '¶ó' && ch < '¸¶')
-			return "¤©";
-		else if(ch >= '¸¶' && ch < '¹Ù')
-			return "¤±";
-		else if(ch >= '¹Ù' && ch < 'ºü')
-			return "¤²";
-		else if(ch >= 'ºü' && ch < '»ç')
-			return "¤³";
-		else if(ch >= '»ç' && ch < '½Î')
-			return "¤µ";
-		else if(ch >= '½Î' && ch < '¾Æ')
-			return "¤¶";
-		else if(ch >= '¾Æ' && ch < 'ÀÚ')
-			return "¤·";
-		else if(ch >= 'ÀÚ' && ch < 'Â¥')
-			return "¤¸";
-		else if(ch >= 'Â¥' && ch < 'Â÷')
-			return "¤¹";
-		else if(ch >= 'Â÷' && ch < 'Ä«')
-			return "¤º";
-		else if(ch >= 'Ä«' && ch < 'Å¸')
-			return "¤»";
-		else if(ch >= 'Å¸' && ch < 'ÆÄ')
-			return "¤¼";
-		else if(ch >= 'ÆÄ' && ch < 'ÇÏ')
-			return "¤½";
-		else if(ch >= 'ÇÏ' && ch <= 'ÆR')
-			return "¤¾";
+		if(ch >= 'ê°€' && ch < 'ê¹Œ')
+			return "ã„±";
+		else if(ch >= 'ê¹Œ' && ch < 'ë‚˜')
+			return "ã„²";
+		else if(ch >= 'ë‚˜' && ch < 'ë‹¤')
+			return "ã„´";
+		else if(ch >= 'ë‹¤' && ch < 'ë”°')
+			return "ã„·";
+		else if(ch >= 'ë”°' && ch < 'ë¼')
+			return "ã„¸";
+		else if(ch >= 'ë¼' && ch < 'ë§ˆ')
+			return "ã„¹";
+		else if(ch >= 'ë§ˆ' && ch < 'ë°”')
+			return "ã…";
+		else if(ch >= 'ë°”' && ch < 'ë¹ ')
+			return "ã…‚";
+		else if(ch >= 'ë¹ ' && ch < 'ì‚¬')
+			return "ã…ƒ";
+		else if(ch >= 'ì‚¬' && ch < 'ì‹¸')
+			return "ã……";
+		else if(ch >= 'ì‹¸' && ch < 'ì•„')
+			return "ã…†";
+		else if(ch >= 'ì•„' && ch < 'ìž')
+			return "ã…‡";
+		else if(ch >= 'ìž' && ch < 'ì§œ')
+			return "ã…ˆ";
+		else if(ch >= 'ì§œ' && ch < 'ì°¨')
+			return "ã…‰";
+		else if(ch >= 'ì°¨' && ch < 'ì¹´')
+			return "ã…Š";
+		else if(ch >= 'ì¹´' && ch < 'íƒ€')
+			return "ã…‹";
+		else if(ch >= 'íƒ€' && ch < 'íŒŒ')
+			return "ã…Œ";
+		else if(ch >= 'íŒŒ' && ch < 'í•˜')
+			return "ã…";
+		else if(ch >= 'í•˜' && ch <= 'íž£')
+			return "ã…Ž";
 		return " ";
 	}
 	
 	public static void main(String[] args) {
 		Scanner sc =new Scanner(System.in);
-		System.out.print("¹®ÀÚ¿­ ÀÔ·Â : ");
+		System.out.print("ë¬¸ìžì—´ ìž…ë ¥ : ");
 		String str=sc.nextLine();
 		String result = new String();
 		for(int i=0;i<str.length();i++) {

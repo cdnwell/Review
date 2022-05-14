@@ -3,12 +3,7 @@ package date;
 import java.util.Date;
 
 public class DateTest {
-	/*
-	 * 1. 2023³âµµ 12.25ÀÏºÎÅÍ ¿À´Ã±îÁö ¸î ÀÏÀÎÁö 2. ¿À´Ã ³¯Â¥ Ç¥½Ã
-	 * 
-	 */
 	public static void main(String[] args) {
-		// 1. 2023³âµµ 12.25ÀÏºÎÅÍ ¿À´Ã±îÁö ¸î ÀÏÀÎÁö
 		Date date = new Date(0, 0, 0); // 1899.12.31
 		System.out.println(date);
 		date = new Date(10, 0, 0);
@@ -21,19 +16,16 @@ public class DateTest {
 		start = new Date(122, 3, 29);
 		Date end = new Date(123, 11, 25);
 		System.out.println(end);
-		System.out.println("ºÎÅÍ\n" + start + "\n±îÁö");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½\n" + start + "\nï¿½ï¿½ï¿½ï¿½");
 		long diff = end.getTime() - start.getTime();
 		diff = diff / (1000 * 60 * 60 * 24);
-		System.out.println(diff + "ÀÏ ³²¾Ò½À´Ï´Ù.");
+		System.out.println(diff + "ï¿½ï¿½ ï¿½ï¿½ï¿½Ò½ï¿½ï¿½Ï´ï¿½.");
 
 		System.out.println();
 		
-		// 2. ¿À´Ã ³¯Â¥ Ç¥½Ã
 		Date today = new Date();
 		System.out.println(today.toString());
 		System.out.println(today);
-		// ¸ğµç °´Ã¼´Â toString()¸Ş¼Òµå¸¦ °¡Áø´Ù.
-		// °´Ã¼ÀÇ °ªÀ» ºÎ¸£¸é toStringÀ» ½ÇÇà½ÃÅ²´Ù.
 
 	}
 

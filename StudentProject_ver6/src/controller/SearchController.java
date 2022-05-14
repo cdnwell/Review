@@ -10,8 +10,8 @@ public class SearchController implements Controller {
 
 	@Override
 	public void execute(Scanner sc) {
-		System.out.println("ÇĞ»ı¹øÈ£¸¦ ÀÌ¿ëÇØ¼­ Á¶È¸¸¦ ½ÃÀÛÇÕ´Ï´Ù...........");
-		System.out.print("Á¶È¸ÇÒ ÇĞ¹ø ÀÔ·Â : ");
+		System.out.println("í•™ìƒë²ˆí˜¸ë¥¼ ì´ìš©í•´ì„œ ì¡°íšŒë¥¼ ì‹œì‘í•©ë‹ˆë‹¤...........");
+		System.out.print("ì¡°íšŒí•  í•™ë²ˆ ì…ë ¥ : ");
 		String studentNo=sc.nextLine();
 		StudentVO vo;
 		try {
@@ -19,7 +19,7 @@ public class SearchController implements Controller {
 			vo.printStudentInfo();
 		} catch (StudentException e) {
 			System.out.println(e.getMessage());
-		}//if¹® ¾µÇÊ¿ä¾øÀÌ try catch¹®À¸·Î ¿À·ù ÀâÀ½
+		}//ifë¬¸ ì“¸í•„ìš”ì—†ì´ try catchë¬¸ìœ¼ë¡œ ì˜¤ë¥˜ ì¡ìŒ
 	}
 
 }

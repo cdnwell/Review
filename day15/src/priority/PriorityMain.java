@@ -23,7 +23,7 @@ public class PriorityMain {
 		t4.start();
 		t5.start();
 		t6.start();
-		System.out.println("main Á¾·á");
+		System.out.println("main ë©”ì„œë“œ ì¢…ë£Œ");
 	}
 
 }

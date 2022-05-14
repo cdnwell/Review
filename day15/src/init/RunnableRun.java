@@ -5,6 +5,6 @@ public class RunnableRun implements Runnable{
 	@Override
 	public void run() {
 		for(int i=0;i<1000000;i++);
-		System.out.println(Thread.currentThread().getName() + " - Á¾·á");
+		System.out.println(Thread.currentThread().getName() + " - ì‹¤í–‰ ì¢…ë£Œ");
 	}
 }

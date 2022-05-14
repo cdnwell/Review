@@ -9,15 +9,15 @@ public class DeleteController implements Controller {
 
 	public void execute(Scanner sc) {
 
-		System.out.println("ÇĞ»ıÁ¤º¸ »èÁ¦¸¦ ½ÃÀÛÇÕ´Ï´Ù........");
-		System.out.print("»èÁ¦ÇÒ ÇĞ¹øÀ» ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.println("í•™ìƒì •ë³´ ì‚­ì œë¥¼ ì‹œì‘í•©ë‹ˆë‹¤........");
+		System.out.print("ì‚­ì œí•  í•™ë²ˆì„ ì…ë ¥í•˜ì„¸ìš” : ");
 		String studentNo = sc.nextLine();
 		
 		if(StudentService.getInstance().deleteStudent(studentNo)) {
-			System.out.println("ÇĞ»ı Á¤º¸°¡ Á¤»óÀûÀ¸·Î »èÁ¦ µÇ¾ú½À´Ï´Ù.");
+			System.out.println("í•™ìƒ ì •ë³´ê°€ ì •ìƒì ìœ¼ë¡œ ì‚­ì œ ë˜ì—ˆìŠµë‹ˆë‹¤.");
 			StudentService.getInstance().updateFile();
 		}else {
-			System.out.println("»èÁ¦ÇÒ ÇĞ»ı Á¤º¸°¡ ¾ø½À´Ï´Ù.");
+			System.out.println("ì‚­ì œí•  í•™ìƒ ì •ë³´ê°€ ì—†ìŠµë‹ˆë‹¤.");
 		}
 		
 	}

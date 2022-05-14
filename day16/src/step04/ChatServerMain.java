@@ -32,14 +32,14 @@ public class ChatServerMain {
 				while(true) {
 					String str = br.readLine();
 					if(str == null || str.equals("exit")) break;
-					broadCasting(client.getInetAddress()+"´ÔÀÇ ¸Ş½ÃÁö : "+str);
+					broadCasting(client.getInetAddress()+"ë‹˜ì´ ë³´ë‚´ëŠ” ë©”ì„¸ì§€:"+str);
 				}
 			}catch(IOException e) {
 				e.printStackTrace();
 			}finally {
 				list.remove(this);
-				System.out.println(client.getInetAddress()+"´ÔÀÌ Á¢¼ÓÀ» Á¾·áÇÏ¿´½À´Ï´Ù.");
-				broadCasting(client.getInetAddress()+"´ÔÀÌ Á¢¼ÓÀ» Á¾·áÇÏ¿´½À´Ï´Ù.");
+				System.out.println(client.getInetAddress()+"ë‹˜ì´ ì ‘ì†ì„ ì¢…ë£Œí•˜ì…¨ìŠµë‹ˆë‹¤.");
+				broadCasting(client.getInetAddress()+"ë‹˜ì´ ì ‘ì†ì„ ì¢…ë£Œí•˜ì…¨ìŠµë‹ˆë‹¤.");
 				try {
 					if(br != null) br.close();
 				}catch(IOException e) {
@@ -70,8 +70,8 @@ public class ChatServerMain {
 				ServerWorker worker = new ServerWorker(client);
 				worker.start();
 				list.add(worker);
-				System.out.println(client.getInetAddress()+"´ÔÀÌ Á¢¼ÓÇÏ¼Ì½À´Ï´Ù.");
-				System.out.println(list.size()+"<<ÇöÀç Á¢¼Ó ÀÎ¿ø");
+				System.out.println(client.getInetAddress()+"ë‹˜ì´ ì ‘ì†í•˜ì…¨ìŠµë‹ˆë‹¤.");
+				System.out.println(list.size()+"<<ì ‘ì†ì¸ì›");
 			}
 		}catch(IOException e) {
 			e.printStackTrace();

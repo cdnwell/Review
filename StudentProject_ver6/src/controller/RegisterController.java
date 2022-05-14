@@ -11,27 +11,27 @@ public class RegisterController implements Controller {
 
 	@Override
 	public void execute(Scanner sc) {
-		System.out.println("ÇĞ»ı Á¤º¸ µî·ÏÀ» ½ÃÀÛÇÕ´Ï´Ù.");
+		System.out.println("í•™ìƒ ì •ë³´ ë“±ë¡ì„ ì‹œì‘í•©ë‹ˆë‹¤.");
 
-		// ÇĞ»ıÁ¤º¸ ÀÔ·Â
+		// í•™ìƒì •ë³´ ì…ë ¥
 
-		try {// ¿¡·¯ ¸Ş½ÃÁö¸¦ ±»ÀÌ ¾µ ÇÊ¿ä°¡ ¾ø´Ù. boolean °ªµµ ¾ø¾ÖÁÜ.
-			System.out.print("ÇĞ¹ø : ");
+		try {// ì—ëŸ¬ ë©”ì‹œì§€ë¥¼ êµ³ì´ ì“¸ í•„ìš”ê°€ ì—†ë‹¤. boolean ê°’ë„ ì—†ì• ì¤Œ.
+			System.out.print("í•™ë²ˆ : ");
 			String studentNo = sc.nextLine();
-			System.out.print("ÀÌ¸§ : ");
+			System.out.print("ì´ë¦„ : ");
 			String name = sc.nextLine();
-			System.out.print("ÇĞ°ú : ");
+			System.out.print("í•™ê³¼ : ");
 			String major = sc.nextLine();
-			System.out.print("Æò±Õ : ");
-			double score = sc.nextDouble(); // ½Ç¼ö¸¦ ÀÔ·Â¹Ş¾Æ¾ß µÇ´Âµ¥ ´Ù¸¥ °ªÀ» ¹Ş¾ÒÀ» ¶§ catch
+			System.out.print("í‰ê·  : ");
+			double score = sc.nextDouble(); // ì‹¤ìˆ˜ë¥¼ ì…ë ¥ë°›ì•„ì•¼ ë˜ëŠ”ë° ë‹¤ë¥¸ ê°’ì„ ë°›ì•˜ì„ ë•Œ catch
 			sc.nextLine();
 			StudentService.getInstance().registerStudent(new StudentVO(studentNo, name, major, score));
-			System.out.println("ÇĞ»ıÁ¤º¸ µî·Ï ¿Ï·á");
+			System.out.println("í•™ìƒì •ë³´ ë“±ë¡ ì™„ë£Œ");
 			StudentService.getInstance().updateFile();
 		} catch (StudentException e) {
 			System.out.println(e.getMessage());
 		} catch (InputMismatchException e) {
-			System.out.println("Á¡¼ö¸¦ Àß¸ø ÀÔ·ÂÁ™½À´Ï´Ù.");
+			System.out.println("ì ìˆ˜ë¥¼ ì˜ëª» ì…ë ¥Â™ìŠµë‹ˆë‹¤.");
 		}
 	}
 

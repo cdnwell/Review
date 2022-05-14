@@ -7,14 +7,14 @@ public class RandomTest {
 	public static void main(String[] args) {
 		Random r = new Random();
 		
-		System.out.println(r.nextDouble());	//0.0 ~ 0.99999... ¹üÀ§¿¡¼­ ·£´ı
-		System.out.println(r.nextInt());	//intÇü ¹üÀ§¿¡¼­ ·£´ı
-		System.out.println(r.nextInt(10));	//0-9±îÁö ·£´ı
+		System.out.println(r.nextDouble());	//0.0 ~ 0.99999... ë²”ìœ„ì—ì„œ ëœë¤
+		System.out.println(r.nextInt());	//intí˜• ë²”ìœ„ì—ì„œ ëœë¤
+		System.out.println(r.nextInt(10));	//0-9ê¹Œì§€ ëœë¤
 		
-		//¹æÁ¤½Ä(ÃÖ¼Ò°ª~ÃÖ´ë°ª) : random
-		//r.nextInt((ÃÖ´ë°ª +1 -ÃÖ¼Ò°ª) + ÃÖ¼Ò°ª)
-		//r.nextInt((ÃÖ´ë°ª -ÃÖ¼Ò°ª +1) + ÃÖ¼Ò°ª) ±â¾ïÇÏ±â ´õ ÁÁ´Ù
-		//36-97 ±¸ÇÏ±â
+		//ë°©ì •ì‹(ìµœì†Œê°’~ìµœëŒ€ê°’) : random
+		//r.nextInt((ìµœëŒ€ê°’ +1 -ìµœì†Œê°’) + ìµœì†Œê°’)
+		//r.nextInt((ìµœëŒ€ê°’ -ìµœì†Œê°’ +1) + ìµœì†Œê°’) ê¸°ì–µí•˜ê¸° ë” ì¢‹ë‹¤
+		//36-97 êµ¬í•˜ê¸°
 		System.out.println();
 		System.out.println(r.nextInt(62)+36);
 	}

@@ -14,6 +14,6 @@ public class JoinThread extends Thread{
 		}catch(InterruptedException e) {
 			e.printStackTrace();
 		}
-		System.out.println(getName() + " - ½º·¹µå Á¾·á");
+		System.out.println(getName() + " - ìŠ¤ë ˆë“œ ì¢…ë£Œ");
 	}
 }

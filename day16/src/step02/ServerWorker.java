@@ -37,7 +37,7 @@ public class ServerWorker extends Thread {
 			e.printStackTrace();
 		} finally {
 			EchoMultiServerMain.list.remove(this);
-			System.out.println(client.getInetAddress()+"´ÔÀÌ Á¢¼ÓÀ» Á¾·áÇß½À´Ï´Ù.");
+			System.out.println(client.getInetAddress()+"ë‹˜ì´ ì ‘ì†í•˜ì…¨ìŠµë‹ˆë‹¤.");
 			try {
 				if (br != null)
 					br.close();

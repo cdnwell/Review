@@ -5,13 +5,13 @@ public class StringBuilderTest {
 	public static void main(String[] args) {
 		StringBuilder str = new StringBuilder("Hello World");
 		System.out.println(str);
-		str.append(100);				//¹®ÀåÀÇ ¸¶Áö¸·¿¡ ¼ıÀÚ 100À» Ãß°¡ÇÑ´Ù.
+		str.append(100);				//ë¬¸ì¥ì˜ ë§ˆì§€ë§‰ì— ìˆ«ì 100ì„ ì¶”ê°€í•œë‹¤.
 		System.out.println(str);
-		str.append("JAVA");				//¹®ÀåÀÇ ¸¶Áö¸·¿¡ JAVA¸¦ Ãß°¡ÇÑ´Ù.
+		str.append("JAVA");				//ë¬¸ì¥ì˜ ë§ˆì§€ë§‰ì— JAVAë¥¼ ì¶”ê°€í•œë‹¤.
 		System.out.println(str);
-		str.replace(0, 5, "TEST");		//0,1,2,3,4(Hello)¸¦ TEST·Î ¹Ù²Û´Ù.
+		str.replace(0, 5, "TEST");		//0,1,2,3,4(Hello)ë¥¼ TESTë¡œ ë°”ê¾¼ë‹¤.
 		System.out.println(str);
-		str.delete(5,10);				//5,6,7,8,9(Hello)¸¦ Áö¿î´Ù. 
+		str.delete(5,10);				//5,6,7,8,9(Hello)ë¥¼ ì§€ìš´ë‹¤. 
 		System.out.println(str);
 		
 	}

@@ -11,20 +11,20 @@ public class StudentMain {
 		Scanner sc = new Scanner(System.in);
 
 		while (true) {
-			System.out.println("---- ÇĞ»ıÁ¤º¸°ü¸® ÇÁ·Î±×·¥ ----");
-			System.out.println("1. ÇĞ»ıÁ¤º¸µî·Ï");
-			System.out.println("2. ÇĞ»ıÁ¤º¸Á¶È¸");
-			System.out.println("3. ÇĞ»ıÁ¤º¸¼öÁ¤");
-			System.out.println("4. ÇĞ»ıÁ¤º¸»èÁ¦");
-			System.out.println("5. ÇĞ»ıÁ¤º¸ ÀüÃ¼Á¶È¸");
-			System.out.println("6. ÀüÃ¼ ¼®Â÷ 1µî Á¶È¸");
-			System.out.println("0. ÇÁ·Î±×·¥ Á¾·á");
-			System.out.print("¿øÇÏ½Ã´Â ¸Ş´º¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä > ");
+			System.out.println("---- í•™ìƒì •ë³´ê´€ë¦¬ í”„ë¡œê·¸ë¨ ----");
+			System.out.println("1. í•™ìƒì •ë³´ë“±ë¡");
+			System.out.println("2. í•™ìƒì •ë³´ì¡°íšŒ");
+			System.out.println("3. í•™ìƒì •ë³´ìˆ˜ì •");
+			System.out.println("4. í•™ìƒì •ë³´ì‚­ì œ");
+			System.out.println("5. í•™ìƒì •ë³´ ì „ì²´ì¡°íšŒ");
+			System.out.println("6. ì „ì²´ ì„ì°¨ 1ë“± ì¡°íšŒ");
+			System.out.println("0. í”„ë¡œê·¸ë¨ ì¢…ë£Œ");
+			System.out.print("ì›í•˜ì‹œëŠ” ë©”ë‰´ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš” > ");
 			int no = sc.nextInt();
 			sc.nextLine();
 
 			if (no == 0) {
-				System.out.println("ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù.");
+				System.out.println("í”„ë¡œê·¸ë¨ì„ ì¢…ë£Œí•©ë‹ˆë‹¤.");
 				break;
 			}
 

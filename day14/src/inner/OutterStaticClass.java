@@ -1,10 +1,10 @@
 package inner;
 /*
- * ½ºÅÂÆ½ ¸Þ¼­µå¿¡¼­ ½ºÅÂÆ½ º¯¼ö(Å¬·¡½º º¯¼ö)°¡ ¾Æ´Ñ º¯¼ö¿¡ Á¢±ÙÇÏÁö ¸øÇÏ´Â ÀÌÀ¯
- * 1. Å¬·¡½º°¡ ¸¸µé¾îÁ®¼­ ÃÊ±âÈ­ ‰ç´ÂÁö ¸ð¸£±â ‹š¹®ÀÌ´Ù.
- * 		Å¬·¡½ºº¯¼ö³ª ¸Þ¼­µå´Â »ç¿ëÇÏ°Ú´Ù´Â ¼±¾ð°ú µ¿½Ã¿¡ ¸ðµÎ ÃÊ±âÈ­µÇ´Â ¹Ý¸é ÀÎ½ºÅÏ½ºº¯¼ö¿Í
- * 		ÀÎ½ºÅÏ½º ¸Þ¼­µå´Â Å¬·¡½º°¡ ÃÊ±âÈ­µÈÁö ¾Ë ¼ö ¾ø´Ù. ÀÎ½ºÅÏ½º¸Þ¼­µå´Â ¹Ýµå½Ã °´Ã¼¸¦ »ý¼ºÇØ¾ß¸¸
- * 		È£ÃâÀÌ °¡´ÉÇÏ´Ù.
+ * ìŠ¤íƒœí‹± ë©”ì„œë“œì—ì„œ ìŠ¤íƒœí‹± ë³€ìˆ˜(í´ëž˜ìŠ¤ ë³€ìˆ˜)ê°€ ì•„ë‹Œ ë³€ìˆ˜ì— ì ‘ê·¼í•˜ì§€ ëª»í•˜ëŠ” ì´ìœ 
+ * 1. í´ëž˜ìŠ¤ê°€ ë§Œë“¤ì–´ì ¸ì„œ ì´ˆê¸°í™” Â‰æ¦®ì© ëª¨ë¥´ê¸° Â‹Âšë¬¸ì´ë‹¤.
+ * 		í´ëž˜ìŠ¤ë³€ìˆ˜ë‚˜ ë©”ì„œë“œëŠ” ì‚¬ìš©í•˜ê² ë‹¤ëŠ” ì„ ì–¸ê³¼ ë™ì‹œì— ëª¨ë‘ ì´ˆê¸°í™”ë˜ëŠ” ë°˜ë©´ ì¸ìŠ¤í„´ìŠ¤ë³€ìˆ˜ì™€
+ * 		ì¸ìŠ¤í„´ìŠ¤ ë©”ì„œë“œëŠ” í´ëž˜ìŠ¤ê°€ ì´ˆê¸°í™”ëœì§€ ì•Œ ìˆ˜ ì—†ë‹¤. ì¸ìŠ¤í„´ìŠ¤ë©”ì„œë“œëŠ” ë°˜ë“œì‹œ ê°ì²´ë¥¼ ìƒì„±í•´ì•¼ë§Œ
+ * 		í˜¸ì¶œì´ ê°€ëŠ¥í•˜ë‹¤.
  */
 public class OutterStaticClass {
 	private int outter;
@@ -22,7 +22,7 @@ public class OutterStaticClass {
 		}
 		
 		public int sum() {
-			//return i+outter;	//outter°¡ none static ÀÌ±â ¶§¹®¿¡ Á¢±ÙÀÌ ºÒ°¡
+			//return i+outter;	//outterê°€ none static ì´ê¸° ë•Œë¬¸ì— ì ‘ê·¼ì´ ë¶ˆê°€
 			return (int)(i + n);
 		}
 	}

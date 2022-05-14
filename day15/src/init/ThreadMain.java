@@ -3,12 +3,12 @@ package init;
 public class ThreadMain {
 
 	public static void main(String[] args) {
-		ThreadRun run1 = new ThreadRun("½º·¹µå1");
-		ThreadRun run2 = new ThreadRun("½º·¹µå2");
-		ThreadRun run3 = new ThreadRun("½º·¹µå3");
-		ThreadRun run4 = new ThreadRun("½º·¹µå4");
-		ThreadRun run5 = new ThreadRun("½º·¹µå5");
-		ThreadRun run6 = new ThreadRun("½º·¹µå6");
+		ThreadRun run1 = new ThreadRun("ìŠ¤ë ˆë“œ1");
+		ThreadRun run2 = new ThreadRun("ìŠ¤ë ˆë“œ2");
+		ThreadRun run3 = new ThreadRun("ìŠ¤ë ˆë“œ3");
+		ThreadRun run4 = new ThreadRun("ìŠ¤ë ˆë“œ4");
+		ThreadRun run5 = new ThreadRun("ìŠ¤ë ˆë“œ5");
+		ThreadRun run6 = new ThreadRun("ìŠ¤ë ˆë“œ6");
 		
 		run1.start();
 		run2.start();
